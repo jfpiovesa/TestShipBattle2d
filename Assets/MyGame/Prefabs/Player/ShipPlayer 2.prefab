@@ -1,0 +1,107 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &291622347550290324
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 1905541807299238123, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: m_Name
+      value: ShipPlayer 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3791493790797917086, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: cfa9687df2cf2fe479b7177d856106a8, type: 3}
+    - target: {fileID: 3985193823649310760, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: shipLargeFlags.Array.data[0]
+      value: 
+      objectReference: {fileID: 21300000, guid: 9003176e5006f8b499dfab6331783775, type: 3}
+    - target: {fileID: 3985193823649310760, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: shipLargeFlags.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: 0ead33a9566a4b343a32160c975b81d0, type: 3}
+    - target: {fileID: 3985193823649310760, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: shipLargeFlags.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 501abbff420453c4a921b6aeed4bec77, type: 3}
+    - target: {fileID: 3985193823649310760, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: shipLargeFlags.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: e356dac024f197b408cfa18bd6e9d1da, type: 3}
+    - target: {fileID: 3985193823649310760, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: shipSailSmalls.Array.data[1]
+      value: 
+      objectReference: {fileID: 21300000, guid: e672495d265711244b8e6aff7538ae82, type: 3}
+    - target: {fileID: 3985193823649310760, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: shipSailSmalls.Array.data[2]
+      value: 
+      objectReference: {fileID: 21300000, guid: 6e2f0db15f3a5cd449dd5e0f0ecc3470, type: 3}
+    - target: {fileID: 3985193823649310760, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: shipSailSmalls.Array.data[3]
+      value: 
+      objectReference: {fileID: 21300000, guid: 9058985854d27944e9d92638369687a2, type: 3}
+    - target: {fileID: 4962755895693391549, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: maxHealth
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 4962755895693391549, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: currenthealth
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5436526578277758837, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: e356dac024f197b408cfa18bd6e9d1da, type: 3}
+    - target: {fileID: 5945184135871674820, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9058985854d27944e9d92638369687a2, type: 3}
+    - target: {fileID: 7497874960091425379, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497874960091425379, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497874960091425379, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497874960091425379, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497874960091425379, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497874960091425379, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497874960091425379, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497874960091425379, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497874960091425379, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7497874960091425379, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 87ef73d9848574544a17710739e51b4a, type: 3}
