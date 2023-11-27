@@ -1099,6 +1099,7 @@ MonoBehaviour:
   LeftPlayer: 0
   righttPlayer: 0
   frontPlayer: 0
+  obstacule: 0
   damageObjectContacteShipChaser:
     _nameAnimationAtack: Shooter
     _activeAtcak: 1
@@ -1159,6 +1160,7 @@ MonoBehaviour:
   minHealth: 0
   maxHealth: 9
   isDead: 0
+  particliIsDead: {fileID: 4552129540579071899, guid: 7b5c52f43c9fc784eb22f91be642f38d, type: 3}
   levelDamageInShip: {fileID: 7532316136635134422}
 --- !u!1 &8771321055053317396
 GameObject:

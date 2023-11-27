@@ -31,7 +31,9 @@ public class EditorHealthPlayer : Editor
                 ProgressBar(shipHealth.currenthealth / (float)shipHealth.maxHealth, "Health");
                 shipHealth.maxHealth = EditorGUILayout.IntField("Max heath", shipHealth.maxHealth, GUILayout.Width(200));
                 EditorGUILayout.Space(2);
-                shipHealth.isDead = EditorGUILayout.ToggleLeft("Dead", shipHealth.isDead);
+                shipHealth.isDead = EditorGUILayout.ToggleLeft("Dead", shipHealth.isDead); 
+                shipHealth.particliIsDead = (GameObject)EditorGUILayout.ObjectField("Particles Is Dead", shipHealth.particliIsDead,typeof(GameObject),true);
+
             }
 
         if (!Selection.activeTransform)

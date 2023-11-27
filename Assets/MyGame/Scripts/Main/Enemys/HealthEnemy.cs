@@ -7,6 +7,7 @@ public class HealthEnemy : HealthBase
 
     [SerializeField] private LevelDamageInShip levelDamageInShip;
 
+
     private void Start()
     {
         levelDamageInShip = GetComponent<LevelDamageInShip>();
@@ -22,9 +23,10 @@ public class HealthEnemy : HealthBase
             if (!isDead)
             {
                 isDead = true;
-                StaicAddedPointsWhenDestroyingAShip.AddPoint(1); 
+                StaicAddedPointsWhenDestroyingAShip.AddPoint(1);
+                Instantiate(particliIsDead,this.transform.position,Quaternion.identity);
             }
-            DestoyThisGameObject(0);
+            DestoyThisGameObject(1f);
         }
     }
     public override void AddHealth(int amountHealth)

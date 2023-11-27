@@ -49,7 +49,10 @@ public class ManagerSpawnEnemyInGamePlayScene : MonoBehaviour
     IEnumerator SpawnEnemysRequest()
     {
         yield return new WaitForSeconds(enemyAppearanceTime);
-        LogictSpawnEnemys();
+        if(canSpawEnemy)
+        {
+            LogictSpawnEnemys();
+        }
         StartCoroutine(SpawnEnemysRequest());
     }
 

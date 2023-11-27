@@ -525,7 +525,7 @@ MonoBehaviour:
   healthShip: {fileID: 0}
   attackShip: {fileID: 7263669477557403055}
   rb2D: {fileID: 2648259934207602261}
-  speedShip: 2
+  speedShip: 1.6
   rotateShip: 1000
   shooterActive: 0
   player: {fileID: 0}
@@ -587,6 +587,7 @@ MonoBehaviour:
   LeftPlayer: 0
   righttPlayer: 0
   frontPlayer: 0
+  obstacule: 0
   damageObjectContacteShipChaser:
     _nameAnimationAtack: Shooter
     _activeAtcak: 1
@@ -609,6 +610,7 @@ MonoBehaviour:
   minHealth: 0
   maxHealth: 5
   isDead: 0
+  particliIsDead: {fileID: 4552129540579071899, guid: 7b5c52f43c9fc784eb22f91be642f38d, type: 3}
   levelDamageInShip: {fileID: 6809487465321784620}
 --- !u!1 &6322582250161532774
 GameObject:

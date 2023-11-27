@@ -9,7 +9,7 @@ public abstract class HealthBase : MonoBehaviour
     public int minHealth = 0;
     public int maxHealth = 10;
     public bool isDead = false;
-
+    public GameObject particliIsDead;
     public virtual void SubtractDamage(int amountDamage)
     {
 

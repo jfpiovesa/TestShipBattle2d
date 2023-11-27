@@ -24,8 +24,10 @@ public class HealthShip : HealthBase
             if (!isDead)
             {
                 isDead = true;
-                FindAnyObjectByType<ManagerSceneGamePlay>().FinishSetValueRequest();
+                Instantiate(particliIsDead, this.transform.position, Quaternion.identity);
+                FindAnyObjectByType<ManagerSceneGamePlay>().FinishSetValueRequest();     
                 StartCoroutine(RequesDalyPainelActive());
+             
             }    
         }
     }
