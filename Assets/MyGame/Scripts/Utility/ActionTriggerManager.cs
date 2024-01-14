@@ -5,7 +5,6 @@ using UnityEngine.Events;
 public class ActionTriggerManager : MonoBehaviour
 {
     [Header("Time For Action")]
-    [SerializeField] private bool canActivateTheTimeToActivateAction = false;
     [SerializeField] private float timeToActivateTheAction = 1;
 
     [Space(10)]
@@ -33,33 +32,15 @@ public class ActionTriggerManager : MonoBehaviour
 
     private void Awake()
     {
-
         if (actionTriggerAwake == null) return;
-        if (canActivateTheTimeToActivateAction)
-        {
-            actionTriggerAwake.Invoke();
-        }
-        else
-        {
-            StartCoroutine(RequestActivateTheTimeToActivateAction(actionTriggerAwake, timeToActivateTheAction));
 
-        }
-
+        StartCoroutine(RequestActivateTheTimeToActivateAction(actionTriggerAwake, timeToActivateTheAction));
     }
     private void Start()
     {
-
         if (actionTriggerStart == null) return;
 
-        if (canActivateTheTimeToActivateAction)
-        {
-            actionTriggerStart.Invoke();
-        }
-        else
-        {
-          //  StartCoroutine(RequestActivateTheTimeToActivateAction(actionTriggerStart, timeToActivateTheAction));
-
-        }
+        StartCoroutine(RequestActivateTheTimeToActivateAction(actionTriggerStart, timeToActivateTheAction));
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -67,46 +48,22 @@ public class ActionTriggerManager : MonoBehaviour
         if (actionOntriggerEnter2D == null) return;
         if (collision.gameObject.layer.Equals(layerMaskOntrigger)) return;
 
-
-        if (canActivateTheTimeToActivateAction)
-        {
-            actionOntriggerEnter2D.Invoke();
-        }
-        else
-        {
-            StartCoroutine(RequestActivateTheTimeToActivateAction(actionOntriggerEnter2D, timeToActivateTheAction));
-
-        }
+        StartCoroutine(RequestActivateTheTimeToActivateAction(actionOntriggerEnter2D, timeToActivateTheAction));
     }
     private void OnTriggerExit2D(Collider2D collision)
     {
         if (actionOntriggerExit2D == null) return;
         if (collision.gameObject.layer.Equals(layerMaskOntrigger)) return;
 
-        if (canActivateTheTimeToActivateAction)
-        {
-            actionOntriggerExit2D.Invoke();
-        }
-        else
-        {
-            StartCoroutine(RequestActivateTheTimeToActivateAction(actionOntriggerExit2D, timeToActivateTheAction));
-
-        }
+        StartCoroutine(RequestActivateTheTimeToActivateAction(actionOntriggerExit2D, timeToActivateTheAction));
     }
     private void OnTriggerStay2D(Collider2D collision)
     {
         if (actionOntriggerStay2D == null) return;
         if (collision.gameObject.layer.Equals(layerMaskOntrigger)) return;
 
-        if (canActivateTheTimeToActivateAction)
-        {
-            actionOntriggerStay2D.Invoke();
-        }
-        else
-        {
-            StartCoroutine(RequestActivateTheTimeToActivateAction(actionOntriggerStay2D, timeToActivateTheAction));
+        StartCoroutine(RequestActivateTheTimeToActivateAction(actionOntriggerStay2D, timeToActivateTheAction));
 
-        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -114,47 +71,22 @@ public class ActionTriggerManager : MonoBehaviour
         if (actionTriggerOnColissioStay2D == null) return;
         if (collision.gameObject.layer.Equals(layerMaskOnColission)) return;
 
-        if (canActivateTheTimeToActivateAction)
-        {
-            actionTriggerOnColissioStay2D.Invoke();
-        }
-        else
-        {
-            StartCoroutine(RequestActivateTheTimeToActivateAction(actionTriggerOnColissioStay2D, timeToActivateTheAction));
+        StartCoroutine(RequestActivateTheTimeToActivateAction(actionTriggerOnColissioStay2D, timeToActivateTheAction));
 
-        }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
         if (actionTriggerOnColissioStay2D == null) return;
         if (collision.gameObject.layer.Equals(layerMaskOnColission)) return;
 
-        if (canActivateTheTimeToActivateAction)
-        {
-            actionTriggerOnColissioStay2D.Invoke();
-        }
-        else
-        {
-            StartCoroutine(RequestActivateTheTimeToActivateAction(actionTriggerOnColissioStay2D, timeToActivateTheAction));
-
-        }
-
+        StartCoroutine(RequestActivateTheTimeToActivateAction(actionTriggerOnColissioStay2D, timeToActivateTheAction));
     }
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (actionTriggerOnColissioStay2D == null) return;
         if (collision.gameObject.layer.Equals(layerMaskOnColission)) return;
 
-
-        if (canActivateTheTimeToActivateAction)
-        {
-            actionTriggerOnColissioStay2D.Invoke();
-        }
-        else
-        {
-            StartCoroutine(RequestActivateTheTimeToActivateAction(actionTriggerOnColissioStay2D,timeToActivateTheAction));
-
-        }
+        StartCoroutine(RequestActivateTheTimeToActivateAction(actionTriggerOnColissioStay2D, timeToActivateTheAction));
     }
     IEnumerator RequestActivateTheTimeToActivateAction(UnityEvent unityEvent, float time)
     {

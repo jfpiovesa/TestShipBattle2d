@@ -22,21 +22,25 @@ public class ManagerLoading : MonoBehaviour
     {
         animator.SetTrigger("FadIn");
         float timeStady = animator.GetCurrentAnimatorClipInfo(0).Length;
-        yield return new WaitForSeconds(timeStady);
+        yield return new WaitForSecondsRealtime(timeStady);
         animator.SetTrigger("FadOut");
     }
     IEnumerator RequetLoadScene(string nameScene)
     {
 
         animator.SetTrigger("FadIn");
-        float timeStady = animator.GetCurrentAnimatorClipInfo(0).Length;
-        yield return new WaitForSeconds(timeStady);
+        float timeStady = animator.GetCurrentAnimatorStateInfo(0).length * 0.8f;
+        yield return new WaitForSecondsRealtime(timeStady);
 
         asyncOperation = SceneManager.LoadSceneAsync(nameScene);
+
         while (!asyncOperation.isDone)
         {
-            yield return new WaitForSeconds(0.5f);
+            yield return null;
         }
+
+        yield return new WaitForSecondsRealtime(0.5f);
+
         animator.SetTrigger("FadOut");
     }
 
