@@ -73,6 +73,7 @@ public class EnemyShip : CharacterBase
     {
 
         direction = CalculateFallowPlayerDirection();
+
         transform.rotation = RotationFallowPlayer();
         transform.Translate(direction * speedShip * Time.deltaTime, Space.World);
     }
