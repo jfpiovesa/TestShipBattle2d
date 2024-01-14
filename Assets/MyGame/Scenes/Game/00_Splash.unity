@@ -227,7 +227,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 31ec411cc08dd9c4a87454f2eeef2516, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeToActivateTheAction: 5
+  timeToActivateTheAction: 2
   actionTriggerStart:
     m_PersistentCalls:
       m_Calls: []
